@@ -1,4 +1,13 @@
 const container = document.querySelector('.container');
+const btn = document.querySelector('.btn')
+
+btn.addEventListener('click', () => {
+  container.innerHTML = '';
+  const newGridSize = +prompt('Please enter the amount of squares per side')
+  createGrid(newGridSize)
+})
+
+
 function createGrid(count) {
   if (count && count > 0 && count <= 100) {
     for (let i = 0; i < count * count; i++) {
