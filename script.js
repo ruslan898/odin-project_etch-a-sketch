@@ -38,6 +38,13 @@ function createGrid(count) {
         )}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
       });
 
+      square.addEventListener('mouseenter', () => {
+        let currentOpacity = parseFloat(getComputedStyle(square).opacity);
+        if (currentOpacity < 1) {
+          square.style.opacity = currentOpacity + 0.2;
+        }
+      });
+
       container.appendChild(square);
     }
   }

@@ -31,4 +31,5 @@ body {
 }
 .square {
   background-color: green;
+  opacity: 0;
 }
