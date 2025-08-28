@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding: 30px;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  min-width: 100px;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.square {
+  background-color: green;
+}
